@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server",
-    "test": "mocha --compilers js:babel-core/register --require ./test/helpers.js --require ./test/dom.js --recursive \"test/*@(.js|.jsx)\" "
+      "test": "mocha --compilers js:babel-core/register --require ./test/helpers.js --require ./test/dom.js --recursive \"test/*@(.js|.jsx)\" ",
+      "status": "yarn test && yarn run flow status"
   },
   "dependencies": {
     "flow-typed": "^2.1.2",

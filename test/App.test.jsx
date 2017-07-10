@@ -1,6 +1,6 @@
 //@flow
-
 import React from 'react';
+
 import { mount, shallow } from 'enzyme';
 import { expect } from 'chai';
 
@@ -14,7 +14,7 @@ describe('<App />', () => {
    });
 
    it('should have a calendar element', () => {
-      const wrapper = shallow(<App/>);
+      const wrapper = mount(<App/>);
       expect(wrapper.find(Calendar)).to.have.length(1);
    });
 });
