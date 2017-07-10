@@ -16,7 +16,17 @@ module.exports = {
     module: {
 	loaders: [
 	    { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
-	    { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ }
+	    { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ },
+	    { test: /^(?!.*?\.module).*\.css$/,
+	      use: ['style-loader', 'css-loader']
+	    },
+	    { test: /\.module\.css$/, use: ['style-loader', {
+		loader: 'css-loader',
+		options: {
+		    modules: true
+		}
+	    }]
+	  }
 	]
     },
     plugins: [HtmlWebpackPluginConfig],

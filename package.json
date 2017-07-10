@@ -7,8 +7,8 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server",
-      "test": "mocha --compilers js:babel-core/register --require ./test/helpers.js --require ./test/dom.js --recursive \"test/*@(.js|.jsx)\" ",
-      "status": "yarn test && yarn run flow status"
+    "test": "mocha --compilers js:babel-core/register --require ./test/helpers.js --require ./test/dom.js --recursive \"test/*@(.js|.jsx)\" ",
+    "status": "yarn test && yarn run flow status"
   },
   "dependencies": {
     "flow-typed": "^2.1.2",
@@ -24,6 +24,7 @@
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "chai": "^4.0.2",
+    "css-loader": "^0.28.4",
     "enzyme": "^2.9.1",
     "flow-bin": "^0.49.1",
     "html-webpack-plugin": "^2.29.0",
@@ -32,6 +33,7 @@
     "react": "^15.6.1",
     "react-addons-test-utils": "^15.6.0",
     "react-dom": "^15.6.1",
-    "sinon": "^2.3.7"
+    "sinon": "^2.3.7",
+    "style-loader": "^0.18.2"
   }
 }

@@ -2,6 +2,8 @@
 
 import React from 'react';
 
+import styles from '../css/calendar.css';
+
 export default class Calendar extends React.Component {
     render() {
 	return (
