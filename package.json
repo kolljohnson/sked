@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server",
-    "test": "mocha --compilers js:babel-core/register --require ./test/helpers.js --require ./test/dom.js --recursive \"test/*@(.js|.jsx)\" --watch --watch-extensions jsx"
+    "test": "mocha --compilers js:babel-core/register --require ./test/helpers.js --require ./test/dom.js --recursive \"test/*@(.js|.jsx)\" "
   },
   "dependencies": {
     "flow-typed": "^2.1.2",
