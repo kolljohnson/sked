@@ -1,11 +1,57 @@
+* {
+    font-family: 'Bellefair', serif; 
+}
+
+h1 {
+    color: #FDFFFF;
+}
+
+body {
+    background: #2DBBFF;
+}
 
 .calendar {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    //grid-template-columns: repeat(7, auto);
+    grid-template-rows: repeat(6, auto);
+    //grid-auto-rows: 100px;
     border: 1px solid black;
+    border-radius: 20px;
+    background: white;
+}
+
+
+.calendar > div {
+}
+
+.calendar-header {
+    //grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.week-row {
+    //grid-area: content;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+}
+
+.cell {
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    padding: 2.5em;
+}
+
+.cell:last-of-type {
+    border-right: none;
 }
 
 .day-header {
-    border: 1px solid black;
+    border-right: 1px solid black;
+    padding: 0.5em;
+}
+
+.day-header:last-of-type {
+    border-right: none;
 }
