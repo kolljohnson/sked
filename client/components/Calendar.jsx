@@ -3,8 +3,10 @@
 import React from 'react';
 
 import styles from '../css/calendar.css';
+import WeekRow from './WeekRow.jsx';
 
 export default class Calendar extends React.Component {
+    
     render() {
 	return (
 	    <div className="calendar">
@@ -17,11 +19,10 @@ export default class Calendar extends React.Component {
 		<div className="day-header"></div>
 		<div className="day-header"></div>
 	      </div>
-	      <div className="week-row row"></div>
-	      <div className="week-row row"></div>
-	      <div className="week-row row"></div>
-	      <div className="week-row row"></div>
-	      <div className="week-row row"></div>
+
+	      {[...Array(5)].map((x, i) =>
+		  <WeekRow key={i}/>	      
+	      )}
 	    </div>
         );
     }
