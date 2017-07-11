@@ -11,4 +11,9 @@ describe('Calendar />', () => {
 	const wrapper = shallow(<Calendar/>);
 	expect(wrapper.find('.day-header')).to.have.length(7);
     });
+
+    it('should have six rows', () => {
+	const wrapper = shallow(<Calendar/>);
+	expect(wrapper.find('.row')).to.have.length(6);
+    });
 });
